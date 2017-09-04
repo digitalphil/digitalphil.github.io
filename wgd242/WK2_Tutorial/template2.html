@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf=8">
+  <title>| Week 2 Template |</title>
+  <link rel="stylesheet" href="template2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $("nav").accessibleDropDown();
+  }); // end ready
+  $.fn.accessibleDropDown = function() {
+      var el = $(this);
+      $("a",el).focus(function() {
+        $(this).parents("li").addClass("hover");
+      }).blur(function() {
+        $(this).parents("li").removeClass("hover");
+      });
+  }
+  </script>
+
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <header>
+      <h1>Welcome to Donec porttitor laoreet leo!</h1>
+      <h3>The Week 2 Tutorial Template for WGD242</h3>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Guitars</a>
+            <ul>
+              <li><a href="#">Acoustic</a></li>
+              <li><a href="#">Electric</a></li>
+              <li><a href="#">Bass</a></li>
+              <li><a href="#">Special</a></li>
+            </ul></li>
+          <li><a href="#">Services</a>
+            <ul>
+              <li><a href="#">Re-string</a></li>
+              <li><a href="#">Repairs</a></li>
+              <li><a href="#">Lessons</a></li>
+              <li><a href="#">Consignment</a></li>
+            </ul></li>
+          <li><a href="#">Information</a>
+            <ul>
+              <li><a href="#">Sub-topic</a></li>
+              <li><a href="#">Sub-topic</a></li>
+              <li><a href="#">Sub-topic</a></li>
+              <li><a href="#">Sub-topic</a></li>
+            </ul></li>
+          <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <p>Sidebar Heading</p>
+      <p>Banner Ad.</p>
+      <p>Banner Ad.</p>
+      <p>Banner Ad.</p>
+      <p>Banner Ad.</p>
+      <p>Banner Ad.</p>
+      <p>Banner Ad.</p>
+    </aside>
+
+    <section>
+      <article>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <p>Written by Prof. Phillip Barton | September 1, 2017</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis maximus vehicula. Ut id purus sit amet mi sagittis viverra porttitor porttitor nibh. In elementum accumsan arcu sit amet facilisis. Nulla in dictum lectus, non venenatis orci. Aliquam laoreet massa eu diam molestie mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac orci lorem. Suspendisse molestie dolor mi, quis ultrices libero fringilla sed. Vestibulum nec rhoncus elit.</p>
+
+        <p>Nullam suscipit nunc in ornare scelerisque. Aliquam velit velit, commodo tempor ullamcorper vel, euismod ut odio. Suspendisse potenti. Curabitur quis tempor lectus. Nulla tellus turpis, bibendum vitae euismod sit amet, rutrum sit amet lorem. Ut rhoncus hendrerit posuere. Vestibulum nec odio augue. In hac habitasse platea dictumst.</p>
+      </article>
+
+      <!--This content does NOT matter, only HTML structure -->
+      <article class="cols">
+        <h2 class="cols-span">Mauris ultrices condimentum sem</h2>
+          <p>Written by Prof. Phillip Barton | August 15, 2017</p>
+          <p>Sed faucibus aliquam mauris non semper. Quisque eget tincidunt nulla. Donec sed dolor id leo sagittis mollis. Donec condimentum, erat vitae convallis suscipit, magna odio finibus orci, ac porttitor risus diam eget mauris. Ut lacinia nibh ac tempor commodo. Vivamus a nisi mauris. Donec in erat vitae nisi molestie commodo ac at eros. Etiam dapibus, nibh sit amet lobortis volutpat, diam sapien eleifend nunc, nec varius nisi nisl ut metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc facilisis lacus vel fermentum aliquet. Nunc lobortis vulputate neque, vitae elementum risus elementum a. Fusce congue metus a scelerisque hendrerit. Proin sed elit metus. Phasellus commodo nibh feugiat, cursus ligula vitae, aliquet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc facilisis lacus vel fermentum aliquet. Nunc lobortis vulputate neque, vitae elementum risus elementum a.</p>
+      </article>
+
+    </section>
+
+
+    <footer>
+      <small>Copyright &copy;2017. All Rights Reserved.</small>
+    </footer>
+
+  </div><!--End of wrapper div -->
+
+</body>
+</html>
